@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player X's Turn"
+        android:textSize="18sp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center" />
+
+    <GridLayout
+        android:id="@+id/boardGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:rowCount="3"
+        android:columnCount="3"
+        android:layout_marginBottom="16dp">
+
+        <Button
+            android:id="@+id/button00"
+            style="@style/BoardButton"
+            android:layout_margin="4dp" />
+        <Button
+            android:id="@+id/button01"
+            style="@style/BoardButton"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/button02"
+            style="@style/BoardButton"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/button10"
+            style="@style/BoardButton"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/button11"
+            style="@style/BoardButton"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/button12"
+            style="@style/BoardButton"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/button20"
+            style="@style/BoardButton"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/button21"
+            style="@style/BoardButton"
+            android:layout_margin="4dp"/>
+        <Button
+            android:id="@+id/button22"
+            style="@style/BoardButton"
+            android:layout_margin="4dp"/>
+    </GridLayout>
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#9BD19D"
+        android:text="Restart Game"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"/>
+</LinearLayout>
